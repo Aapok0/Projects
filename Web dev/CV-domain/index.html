@@ -29,6 +29,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="html/skills.html">Skills</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/thesis.html">Thesis Ideas</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -52,27 +55,53 @@
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <h3 class="feature-title">Lorem ipsum</h3>
                     <img src="images/column-1.jpeg" class="img-fluid">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+                    <p>The years in Aalto University's Guild of Electrical Engineering were a meaningful part of my life. 
+                        It all started during my freshman year in 2012, when I fell in love with the engineering community 
+                        and became a teekkari.
+                    </p>
+                    <p>All the events were inventive and fun, but it was the people that really sold it for me. As my first 
+                        job in the guild I tutored freshmen. That was one of the best years I have lived and it was crowned 
+                        with the honor of being chosen as one of two tutors of the year (in our guild). Next fall I received 
+                        a silver pin of achievement in the Aalto University's Guild of Electrical Engineering.
+                    </p>
+                    <p>It all culminated in 2016, when I served in the Guild's board overseeing our student advocacy.</p>
                 </div>
                 
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <h3 class="feature-title">Lorem ipsum</h3>
                     <img src="images/column-2.jpeg" class="img-fluid">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+                    <p>How I ended up in the life science/health technology field was through my fascination to biomechanics, 
+                        physiology and kinesiology, my efforts to improve my basic health and athletic performance and will to 
+                        extend that help to other people.</p>
+                    <p>Despite my young age, I have had several physical problems and injuries related to joint pain, 
+                        hip malposition and narrow airways. Yet, I still kept working out and ended up making things worse. 
+                        Consequently, I attempted to fix them myself, which lead me to study this field on my own and become 
+                        fascinated with it. However, I did eventually get smart and ask for professional help.</p>
                 </div>
                 
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <h3 class="feature-title">Get in Touch!</h3>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name" name="">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email Address" name="email">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="4"></textarea>
-                    </div>
-                    <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+                    <form id="contact-form" method="post" action="php/contact.php" role="form">
+                        <div class="messages"></div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name *" name="name" required="required" data-error="Name is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Address *" name="email" required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Phone" name="phone">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" placeholder="Message for me *" name="message"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <input type="submit" class="btn btn-secondary btn-block" value="Send">
+                        <p class="text-muted"><br/><strong>*</strong> These fields are required.</p>
+                    </form>
                 </div>
             </div>
         </div>
@@ -82,20 +111,21 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-12">
                         <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+                        <p>I am available to work May 10th forward till August 22nd and open to part-time alongside studies. 
+                            I am also open to propositions for thesis work from January 2022 forward.</p>
+                        <p>I am always happy to come for an interview or do one through a video call.</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                    <p>1640 Riverside Drive, Hill Valley, California
-                    <br/>info@mywebsite.com
-                    <br/>+ 01 234 567 88
-                    <br/>+ 01 234 567 89</p>
+                    <p>aapo@kokot.fi
+                    <br/>+358 (0) 440191092</p>
                 </div>
             <div>
-            <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>
+            <div class="footer-copyright text-center">by Aapo Kokko</div>
         </footer>
 
         <script src="js/main.js"></script>
+        <script src="js/validator.js"></script>
+        <script src="js/contact.js"></script>
     </body>
 </html>
